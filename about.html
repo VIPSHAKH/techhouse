@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech House haqida - Premium texnologiya mahsulotlari do'koni">
+    <title>Biz haqimizda - Tech House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .team-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .team-card h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+        .team-card .role {
+            color: var(--accent);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .about-cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            margin: 3rem 0;
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1) 0%, rgba(214, 48, 80, 0.1) 100%);
+            border-radius: var(--radius-xl);
+        }
+        .about-cta-section h2 {
+            margin-bottom: 1rem;
+        }
+        .about-cta-section p {
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+    </style>
+</head>
+<body data-page="about">
+    
+    <header class="header glass-dark">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Tech House</a>
+            
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Mahsulotlarni qidirish..." aria-label="Mahsulotlarni qidirish">
+                <button class="search-btn" aria-label="Qidirish">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+            </div>
+            
+            <nav class="nav">
+                <a href="products.html" class="nav-link">Mahsulotlar</a>
+                <a href="membership.html" class="nav-link">A'zolik</a>
+                <a href="support.html" class="nav-link">Yordam</a>
+                <a href="about.html" class="nav-link active">Haqida</a>
+            </nav>
+            
+            <a href="cart.html" class="cart-btn cart-btn-desktop" aria-label="Savatni ko'rish">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <span class="cart-badge" style="display: none;">0</span>
+            </a>
+            
+            <div class="mobile-controls">
+                <a href="cart.html" class="cart-btn" aria-label="Savatni ko'rish">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Menyuni ochish">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <nav class="mobile-nav">
+            <a href="products.html">Mahsulotlar</a>
+            <a href="membership.html">A'zolik</a>
+            <a href="support.html">Yordam</a>
+            <a href="about.html">Haqida</a>
+        </nav>
+    </header>
+
+    <main class="about-page" style="padding-top: 100px; min-height: 100vh;">
+        <div class="container">
+            
+            <div class="about-hero">
+                <h1>Tech House haqida</h1>
+                <p class="lead">Biz yuqori sifatli texnologiyani hamma uchun ochiq qilish missiyasidamiz. 2020 yilda tashkil etilgan Tech House kichik startapdan butun dunyo bo'ylab texnologiya ishqibozlari uchun ishonchli manzilga aylandi.</p>
+            </div>
+
+            
+            <section class="story-section">
+                <div class="story-image">
+                    <img src="https://picsum.photos/seed/techstore/600/400" alt="Tech House Store" onerror="this.src='https://picsum.photos/600/400?random=100'">
+                </div>
+                <div class="story-content">
+                    <h2>Bizning hikoyamiz</h2>
+                    <p>Tech House oddiy g'oya bilan boshlandi: texnologiya hayotni murakkablashtirmasdan, yaxshilashi kerak. Asoschlarimiz, chalkash mahsulot tanlovlari va yomon mijozlarga xizmat ko'rsatishdan norozi bo'lgan texnologiya ishqibozlari guruhi, nimadir yaxshiroq yaratishga qaror qilishdi.</p>
+                    <p>Bugungi kunda biz etakchi brendlardan eng yaxshi mahsulotlarni sinchkovlik bilan tanlaymiz, hamma narsani o'zimiz sinaymiz va halol tavsiyalarni taqdim etamiz. Bizning mutaxassis jamoamiz sizga ehtiyojlaringiz uchun mukammal texnologik yechim topishda har doim yordam berishga tayyor.</p>
+                    <a href="products.html" class="btn btn-primary">Mahsulotlarni ko'rish</a>
+                </div>
+            </section>
+
+            
+            <section class="values-section">
+                <h2>Bizning qadriyatlarimiz</h2>
+                <div class="values-grid">
+                    <div class="value-card glass-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Sifat birinchi</h3>
+                        <p>Biz sotadigan har bir mahsulot bizning yuqori standartlarimizga javob berish uchun sinovdan o'tkazilgan.</p>
+                    </div>
+
+                    <div class="value-card glass-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Mijozga e'tibor</h3>
+                        <p>Mijozlarimiz biz qiladigan barcha ishlarimizning markazida turishadi.</p>
+                    </div>
+
+                    <div class="value-card glass-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3>Innovatsiya</h3>
+                        <p>Sizga eng so'nggi texnologik yangiliklarni taqdim etish uchun biz tendensiyalardan oldinda turamiz.</p>
+                    </div>
+
+                    <div class="value-card glass-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3>Barqarorlik</h3>
+                        <p>Atrof-muhitga ta'sirimizni kamaytirish majburiyatini oldik.</p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="stats-section glass-card" style="border-radius: var(--radius-xl);">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Baxtli mijozlar</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Mahsulotlar</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Yordam</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">O'rtacha reyting</div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="team-section">
+                <h2>Jamoamiz bilan tanishing</h2>
+                <div class="team-grid">
+                    <div class="team-card glass-card">
+                        <div class="team-avatar">
+                            <img src="https://picsum.photos/seed/sarah/200/200" alt="Sarah Chen" onerror="this.src='https://picsum.photos/200/200?random=10'">
+                        </div>
+                        <h3>Sarah Chen</h3>
+                        <span class="role">CEO & Founder</span>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-avatar">
+                            <img src="https://picsum.photos/seed/mike/200/200" alt="Mike Johnson" onerror="this.src='https://picsum.photos/200/200?random=12'">
+                        </div>
+                        <h3>Mike Johnson</h3>
+                        <span class="role">CTO</span>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-avatar">
+                            <img src="https://picsum.photos/seed/emily/200/200" alt="Emily Davis" onerror="this.src='https://picsum.photos/200/200?random=14'">
+                        </div>
+                        <h3>Emily Davis</h3>
+                        <span class="role">Head of Design</span>
+                    </div>
+
+                    <div class="team-card glass-card">
+                        <div class="team-avatar">
+                            <img src="https://picsum.photos/seed/alex/200/200" alt="Alex Kim" onerror="this.src='https://picsum.photos/200/200?random=16'">
+                        </div>
+                        <h3>Alex Kim</h3>
+                        <span class="role">Product manager</span>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="cta-section">
+                <h2>Ready to get started?</h2>
+                <p>Join thousands of satisfied customers and discover the Tech House difference.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="products.html" class="btn btn-primary">Hozir xarid qilish</a>
+                    <a href="membership.html" class="btn btn-secondary">A'zolikka qo'shilish</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Do'kon manzillari
+                    </h3>
+                    <div class="footer-location">
+                        <strong>New York</strong>
+                        <span>123 Tech Avenue, NY 10001</span>
+                    </div>
+                    <div class="footer-location">
+                        <strong>San Francisco</strong>
+                        <span>456 Innovation Drive, CA 94105</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Tezkor havolalar</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Mahsulotlar</a></li>
+                        <li><a href="membership.html">A'zolik</a></li>
+                        <li><a href="support.html">Yordam</a></li>
+                        <li><a href="about.html">Biz haqimizda</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Aloqada bo'ling</h3>
+                    <p style="color: var(--gray-300); font-size: 0.875rem; margin-bottom: 1rem;">
+                        Eng so'nggi yangiliklarni olish uchun obuna bo'ling.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Emailingizni kiriting">
+                        <button type="submit" class="btn btn-primary">Qo'shilish</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tech House. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

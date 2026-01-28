@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sizning xarid savatingiz - Tech House">
+    <title>Xarid savati - Tech House</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="cart">
+    
+    <header class="header glass-dark">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Tech House</a>
+            
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Mahsulotlarni qidirish..." aria-label="Mahsulotlarni qidirish">
+                <button class="search-btn" aria-label="Qidirish">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+            </div>
+            
+            <nav class="nav">
+                <a href="products.html" class="nav-link">Mahsulotlar</a>
+                <a href="membership.html" class="nav-link">A'zolik</a>
+                <a href="support.html" class="nav-link">Yordam</a>
+                <a href="about.html" class="nav-link">Haqida</a>
+            </nav>
+            
+            <a href="cart.html" class="cart-btn cart-btn-desktop" aria-label="Savatni ko'rish">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <span class="cart-badge" style="display: none;">0</span>
+            </a>
+            
+            <div class="mobile-controls">
+                <a href="cart.html" class="cart-btn" aria-label="Savatni ko'rish">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Menyuni ochish">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <nav class="mobile-nav">
+            <a href="products.html">Mahsulotlar</a>
+            <a href="membership.html">A'zolik</a>
+            <a href="support.html">Yordam</a>
+            <a href="about.html">Haqida</a>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <div class="container section">
+            <h1 style="margin-bottom: 2.5rem;">Xarid savati</h1>
+
+            
+            <div class="cart-empty glass-card" style="display: none;">
+                <div class="cart-empty-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <h2>Savatingiz bo'sh</h2>
+                <p>Hali hech qanday texnologiya qo'shmaganga o'xshaysiz.</p>
+                <a href="products.html" class="btn btn-primary btn-lg">Xarid qilishni boshlash</a>
+            </div>
+
+            
+            <div class="cart-content cart-layout" style="display: none;">
+                
+                <div class="cart-items">
+                    <div class="glass-card">
+                        <div class="cart-items-list">
+                            
+                        </div>
+                        <div class="cart-footer">
+                            <a href="products.html">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                                Xaridni davom ettirish
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="order-summary">
+                    <div class="summary-card glass-card">
+                        <h2>Buyurtma xulasasi</h2>
+                        
+                        <div class="summary-row">
+                            <span>Oraliq jami (<span class="items-count">0</span> ta mahsulot)</span>
+                            <span class="summary-subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row shipping">
+                            <span>Yetkazib berish</span>
+                            <span>Bepul</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Soliq (8%)</span>
+                            <span class="summary-tax">$0.00</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Jami</span>
+                            <span class="summary-total-value">$0.00</span>
+                        </div>
+
+                        <div class="summary-actions">
+                            <a href="checkout.html" class="btn btn-primary btn-lg btn-block">
+                                To'lovga O'tish
+                            </a>
+                        </div>
+
+                        <div class="summary-secure">
+                            <div>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                <span>Xavfsiz to'lov - SSL shifrlangan</span>
+                            </div>
+                            <span>30 kunlik pulni qaytarish kafolati</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Do'kon manzillari
+                    </h3>
+                    <div class="footer-location">
+                        <strong>New York</strong>
+                        <span>123 Tech Avenue, NY 10001</span>
+                    </div>
+                    <div class="footer-location">
+                        <strong>San Francisco</strong>
+                        <span>456 Innovation Drive, CA 94105</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Mijozlarni qo'llab-quvvatlash</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Qaytarish siyosati</a></li>
+                        <li><a href="#">Yetkazib berish ma'lumoti</a></li>
+                        <li><a href="#">Kafolat variantlari</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Aloqada bo'ling</h3>
+                    <p style="color: var(--gray-300); font-size: 0.875rem; margin-bottom: 1rem;">
+                        Subscribe for the latest updates.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Emailingizni kiriting">
+                        <button type="submit" class="btn btn-primary">Qo'shilish</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tech House. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

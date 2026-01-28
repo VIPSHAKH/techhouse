@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xaridni yakunlash - Tech House">
+    <title>To'lov - Tech House</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+    
+    <header class="header glass-dark">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Tech House</a>
+            
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Mahsulotlarni qidirish..." aria-label="Mahsulotlarni qidirish">
+                <button class="search-btn" aria-label="Qidirish">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+            </div>
+            
+            <nav class="nav">
+                <a href="products.html" class="nav-link">Mahsulotlar</a>
+                <a href="membership.html" class="nav-link">A'zolik</a>
+                <a href="support.html" class="nav-link">Yordam</a>
+                <a href="about.html" class="nav-link">Haqida</a>
+            </nav>
+            
+            <a href="cart.html" class="cart-btn cart-btn-desktop" aria-label="Savatni ko'rish">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <span class="cart-badge" style="display: none;">0</span>
+            </a>
+            
+            <div class="mobile-controls">
+                <a href="cart.html" class="cart-btn" aria-label="Savatni ko'rish">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Menyuni ochish">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <nav class="mobile-nav">
+            <a href="products.html">Mahsulotlar</a>
+            <a href="membership.html">A'zolik</a>
+            <a href="support.html">Yordam</a>
+            <a href="about.html">Haqida</a>
+        </nav>
+    </header>
+
+    <main class="checkout-page">
+        <div class="container section">
+            <h1 style="margin-bottom: 2.5rem;">To'lov</h1>
+
+            <div class="checkout-layout">
+                
+                <form class="checkout-form">
+                    
+                    <section class="checkout-section glass-card">
+                        <h2>
+                            <span class="icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg>
+                            </span>
+                            Yetkazib berish usuli
+                        </h2>
+                        <div class="delivery-options">
+                            <label class="delivery-option selected">
+                                <input type="radio" name="delivery" value="home" checked>
+                                <div class="delivery-option-content">
+                                    <div class="delivery-option-header">
+                                        <strong>Uyga yetkazib berish</strong>
+                                        <span>Bepul</span>
+                                    </div>
+                                    <p>3-5 ish kunida yetkazib beriladi</p>
+                                </div>
+                            </label>
+                            <label class="delivery-option">
+                                <input type="radio" name="delivery" value="pickup">
+                                <div class="delivery-option-content">
+                                    <div class="delivery-option-header">
+                                        <strong>Do'kondan olib ketish</strong>
+                                        <span style="color: var(--gray-900);">Bepul</span>
+                                    </div>
+                                    <p>Eng yaqin do'kondan olib keting</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Store Selection (hidden by default) -->
+                        <div class="store-selection" id="storeSelection" style="display: none;">
+                            <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem; color: var(--gray-700);">Do'konni tanlang</h3>
+                            <div class="store-options">
+                                <label class="store-option">
+                                    <input type="radio" name="store" value="newyork" required>
+                                    <div class="store-option-content">
+                                        <div class="store-info">
+                                            <strong>New York</strong>
+                                            <span>123 Tech Avenue, NY 10001</span>
+                                        </div>
+                                        <div class="store-hours">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            <span>09:00 - 21:00</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="store-option">
+                                    <input type="radio" name="store" value="sanfrancisco">
+                                    <div class="store-option-content">
+                                        <div class="store-info">
+                                            <strong>San Francisco</strong>
+                                            <span>456 Innovation Drive, CA 94105</span>
+                                        </div>
+                                        <div class="store-hours">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            <span>10:00 - 20:00</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="store-option">
+                                    <input type="radio" name="store" value="austin">
+                                    <div class="store-option-content">
+                                        <div class="store-info">
+                                            <strong>Austin</strong>
+                                            <span>789 Silicon Hills, TX 78701</span>
+                                        </div>
+                                        <div class="store-hours">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            <span>09:00 - 22:00</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+                    <section class="checkout-section glass-card" id="addressSection">
+                        <h2>
+                            <span class="icon-box blue">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </span>
+                            Yetkazib Berish Manzili
+                        </h2>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">Ism</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Familiya</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="address">Manzil 1-qator</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Shahar</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">Pochta Indeksi</label>
+                                <input type="text" id="zip" name="zip" required>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+                    <section class="checkout-section glass-card">
+                        <h2>
+                            <span class="icon-box blue">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                            </span>
+                            To'lov ma'lumotlari
+                        </h2>
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label for="cardNumber">Karta raqami</label>
+                                <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="expiry">Amal qilish muddati</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="OY/YIL" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="cardName">Karta egasining ismi</label>
+                                <input type="text" id="cardName" name="cardName" required>
+                            </div>
+                        </div>
+                    </section>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        Buyurtma berish
+                    </button>
+                </form>
+
+                
+                <div class="order-summary">
+                    <div class="summary-card glass-card checkout-summary">
+                        <h2>Buyurtma xulasasi</h2>
+                        
+                        <div class="order-items" style="margin-bottom: 1.5rem;">
+                            
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Oraliq Jami</span>
+                            <span class="checkout-subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row shipping">
+                            <span>Yetkazib Berish</span>
+                            <span>Bepul</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Soliq (8%)</span>
+                            <span class="checkout-tax">$0.00</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Jami</span>
+                            <span class="checkout-total-value">$0.00</span>
+                        </div>
+
+                        <div class="summary-secure" style="margin-top: 1.5rem;">
+                            <div>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                <span>Xavfsiz to'lov - SSL shifrlangan</span>
+                            </div>
+                            <span>30 kunlik pulni qaytarish kafolati</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Do'kon Manzillari
+                    </h3>
+                    <div class="footer-location">
+                        <strong>New York</strong>
+                        <span>123 Tech Avenue, NY 10001</span>
+                    </div>
+                    <div class="footer-location">
+                        <strong>San Francisco</strong>
+                        <span>456 Innovation Drive, CA 94105</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Mijozlarni qo'llab-quvvatlash</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Qaytarish Siyosati</a></li>
+                        <li><a href="#">Yetkazib Berish Ma'lumoti</a></li>
+                        <li><a href="#">Kafolat Variantlari</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Aloqada bo'ling</h3>
+                    <p style="color: var(--gray-300); font-size: 0.875rem; margin-bottom: 1rem;">
+                        So'nggi yangiliklardan xabardor bo'ling.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Emailingizni kiriting">
+                        <button type="submit" class="btn btn-primary">Qo'shilish</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tech House. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

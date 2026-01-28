@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech House yordam markazi - Savol va javoblar, aloqa ma'lumotlari">
+    <title>Yordam - Tech House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            background: var(--gray-50);
+            border-radius: var(--radius-lg);
+        }
+        .contact-method svg {
+            color: var(--accent);
+        }
+        .contact-method span {
+            font-weight: 600;
+            color: var(--gray-900);
+        }
+    </style>
+</head>
+<body data-page="support">
+    
+    <header class="header glass-dark">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Tech House</a>
+            
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Mahsulotlarni qidirish..." aria-label="Mahsulotlarni qidirish">
+                <button class="search-btn" aria-label="Qidirish">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+            </div>
+            
+            <nav class="nav">
+                <a href="products.html" class="nav-link">Mahsulotlar</a>
+                <a href="membership.html" class="nav-link">A'zolik</a>
+                <a href="support.html" class="nav-link active">Yordam</a>
+                <a href="about.html" class="nav-link">Haqida</a>
+            </nav>
+            
+            <a href="cart.html" class="cart-btn cart-btn-desktop" aria-label="Savatni ko'rish">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                <span class="cart-badge" style="display: none;">0</span>
+            </a>
+            
+            <div class="mobile-controls">
+                <a href="cart.html" class="cart-btn" aria-label="Savatni ko'rish">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Menyuni ochish">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+        
+        <nav class="mobile-nav">
+            <a href="products.html">Mahsulotlar</a>
+            <a href="membership.html">A'zolik</a>
+            <a href="support.html">Yordam</a>
+            <a href="about.html">Haqida</a>
+        </nav>
+    </header>
+
+    <main class="support-page">
+        <div class="container">
+            
+            <div class="support-hero">
+                <h1>Qanday Yordam Bera Olamiz?</h1>
+                <p>Umumiy savollarga javoblar toping, qo'llab-quvvatlash jamoamiz bilan bog'laning yoki yordam resurslarimizni o'rganing.</p>
+            </div>
+
+            
+            <div class="support-grid">
+                <div class="support-card glass-card">
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h3>Jonli Chat</h3>
+                    <p>Darhol yordam olish uchun qo'llab-quvvatlash jamoamiz bilan suhbatlashing.</p>
+                    <button class="btn btn-primary">Chatni Boshlash</button>
+                </div>
+
+                <div class="support-card glass-card">
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <h3>Email Orqali Yordam</h3>
+                    <p>Bizga email yuboring va biz 24 soat ichida javob beramiz.</p>
+                    <button class="btn btn-secondary">Email Yuborish</button>
+                </div>
+
+                <div class="support-card glass-card">
+                    <div class="support-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>Telefon Orqali Yordam</h3>
+                    <p>Shoshilinch masalalar yoki murakkab muammolar uchun bizga qo'ng'iroq qiling.</p>
+                    <button class="btn btn-secondary">1-800-TECH</button>
+                </div>
+            </div>
+
+            
+            <section class="faq-section">
+                <h2>Ko'p Beriladigan Savollar</h2>
+                
+                <div class="faq-list glass-card" style="border-radius: var(--radius-xl); overflow: hidden;">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Qaytarish siyosatingiz qanday?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Biz barcha mahsulotlar uchun asl holatida 30 kunlik qaytarish siyosatini taklif qilamiz. Mahsulotlar ishlatilmagan va asl qadoqda bo'lishi kerak. Qaytarishni boshlash uchun qo'llab-quvvatlash jamoamiz bilan bog'laning.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-top: 1px solid var(--gray-200);">
+                        <button class="faq-question">
+                            Yetkazib berish qancha vaqt oladi?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Standart yetkazib berish 3-5 ish kunini oladi. Tezkor yetkazib berish (1-2 ish kuni) qo'shimcha to'lov evaziga mavjud. 50 dollardan ortiq buyurtmalarda bepul yetkazib berish mavjud.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-top: 1px solid var(--gray-200);">
+                        <button class="faq-question">
+                            Mahsulotlarga kafolat berasizmi?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ha! Barcha mahsulotlar kamida 1 yillik ishlab chiqaruvchi kafolati bilan birga keladi. Oltin a'zolar tanlangan mahsulotlarda kengaytirilgan kafolatni olishadi. Aniq kafolat tafsilotlari uchun individual mahsulot sahifalarini tekshiring.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-top: 1px solid var(--gray-200);">
+                        <button class="faq-question">
+                            Buyurtmamni qanday kuzataman?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Buyurtmangiz jo'natilgandan so'ng, siz kuzatuv ma'lumotlari bilan email olasiz. Shuningdek, istalgan vaqtda buyurtma holati va kuzatuv tafsilotlarini ko'rish uchun hisobingizga kirishingiz mumkin.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="border-top: 1px solid var(--gray-200);">
+                        <button class="faq-question">
+                            Qanday to'lov usullarini qabul qilasiz?
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Biz barcha asosiy kredit kartalarini (Visa, MasterCard, American Express), PayPal, Apple Pay va Google Pay ni qabul qilamiz. Barcha tranzaksiyalar SSL shifrlash bilan himoyalangan.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="contact-section glass-card">
+                <h2>Hali Ham Yordam Kerakmi?</h2>
+                <p>Bizning mijozlarni qo'llab-quvvatlash jamoamiz dushanbadan juma kunigacha, soat 9 dan 18 gacha (EST) mavjud.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>1-800-TECH-HOUSE</span>
+                    </div>
+                    <div class="contact-method">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>support@techhouse.com</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Do'kon Manzillari
+                    </h3>
+                    <div class="footer-location">
+                        <strong>New York</strong>
+                        <span>123 Tech Avenue, NY 10001</span>
+                    </div>
+                    <div class="footer-location">
+                        <strong>San Francisco</strong>
+                        <span>456 Innovation Drive, CA 94105</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Tezkor Havolalar</h3>
+                    <ul class="footer-links">
+                        <li><a href="products.html">Mahsulotlar</a></li>
+                        <li><a href="membership.html">A'zolik</a></li>
+                        <li><a href="support.html">Yordam</a></li>
+                        <li><a href="about.html">Biz Haqimizda</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Aloqada Bo'ling</h3>
+                    <p style="color: var(--gray-300); font-size: 0.875rem; margin-bottom: 1rem;">
+                        Eng so'nggi yangiliklarni olish uchun obuna bo'ling.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Emailingizni kiriting">
+                        <button type="submit" class="btn btn-primary">Qo'shilish</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tech House. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
