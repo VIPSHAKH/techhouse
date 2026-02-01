@@ -1056,6 +1056,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSearch();
     initNewsletter();
     initFormValidation();
+    initMobileFilters();
     
     const page = document.body.dataset.page;
     switch (page) {
@@ -1079,6 +1080,50 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
     }
 });
+
+// Mobile Filters
+function initMobileFilters() {
+    const openBtn = document.getElementById('openFilters');
+    const closeBtn = document.getElementById('closeFilters');
+    const applyBtn = document.getElementById('applyFilters');
+    const overlay = document.getElementById('filterOverlay');
+    const sidebar = document.getElementById('filtersSidebar');
+    
+    if (!openBtn || !sidebar) return;
+    
+    function openFilters() {
+        sidebar.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeFilters() {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    
+    openBtn.addEventListener('click', openFilters);
+    closeBtn?.addEventListener('click', closeFilters);
+    overlay?.addEventListener('click', closeFilters);
+    applyBtn?.addEventListener('click', closeFilters);
+    
+    // Category chips
+    const chips = document.querySelectorAll('.category-chip');
+    chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+            chips.forEach(c => c.classList.remove('active'));
+            chip.classList.add('active');
+            // Trigger category filter
+            const category = chip.dataset.category;
+            const radioInput = document.querySelector(`input[name="category"][value="${category}"]`);
+            if (radioInput) {
+                radioInput.checked = true;
+                radioInput.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        });
+    });
+}
 
 
 
