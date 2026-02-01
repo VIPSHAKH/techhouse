@@ -732,12 +732,34 @@ a {
     }
     /* Delivery Info Mobile */
     .delivery-info {
-        grid-template-columns: 1fr;
-        gap: 0;
+        display: flex;
+        gap: 0.375rem;
         padding: 0;
         border: none;
         background: transparent;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+    .delivery-item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.375rem 0.5rem;
+        background: var(--gray-50);
+        border-radius: var(--radius-sm);
+    }
+    .delivery-item svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        color: var(--gray-400);
+    }
+    .delivery-title {
+        display: none;
+    }
+    .delivery-value {
+        font-size: 0.6875rem;
+        font-weight: 500;
     }
     .delivery-item {
         padding: 0.75rem 0;
@@ -1111,6 +1133,21 @@ a {
     .product-card {
         border-radius: var(--radius);
     }
+    .product-card-image {
+        position: relative;
+    }
+    /* Mobile: Always show add to cart button */
+    .product-card-actions {
+        position: absolute;
+        bottom: 0.75rem;
+        left: 0.75rem;
+        right: 0.75rem;
+        opacity: 1;
+    }
+    .product-card-actions .btn {
+        padding: 0.625rem 1rem;
+        font-size: 0.8125rem;
+    }
     .product-card-body {
         padding: 0.75rem;
     }
@@ -1119,6 +1156,10 @@ a {
     }
     .product-card-footer {
         padding: 0 0.75rem 0.75rem;
+    }
+    /* Hide the small + button on mobile, use the big button instead */
+    .product-card-btn {
+        display: none;
     }
     
     /* ===== FOOTER MOBILE ===== */
@@ -1942,10 +1983,14 @@ a {
 .delivery-value.accent {
     color: var(--accent);
 }
-/* Mobile Buy Bar */
-.mobile-buy-bar {
-    display: none;
+
+/* Mobile Buy Bar - shown on mobile by default */
+@media (min-width: 768px) {
+    .mobile-buy-bar {
+        display: none;
+    }
 }
+
 .product-category {
     font-size: 0.8125rem;
     font-weight: 600;
