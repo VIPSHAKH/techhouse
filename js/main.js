@@ -756,11 +756,30 @@ function initProductDetailsPage() {
     } else {
         thumbnailsContainer.style.display = 'none';
     }
-    document.querySelector('.product-category').textContent = product.category;
+    const categoryEl = document.querySelector('.product-category');
+    if (categoryEl) categoryEl.textContent = product.category;
     document.querySelector('.product-title').textContent = product.name;
-    document.querySelector('.product-rating .stars').innerHTML = renderStars(product.rating);
-    document.querySelector('.product-rating span').textContent = `${product.rating} (${product.reviewCount} reviews)`;
-    document.querySelector('.product-price').textContent = formatPrice(product.price);
+    
+    const ratingStars = document.querySelector('.product-rating .stars');
+    if (ratingStars) ratingStars.innerHTML = renderStars(product.rating);
+    
+    const ratingSpan = document.querySelector('.product-rating span');
+    if (ratingSpan) ratingSpan.textContent = `${product.rating} (${product.reviewCount} reviews)`;
+    
+    // Update all price elements (desktop and mobile)
+    const priceValue = formatPrice(product.price);
+    const installmentValue = `oyiga ${formatPrice(Math.round(product.price / 10))} dan`;
+    
+    document.querySelectorAll('.product-price, #productPrice').forEach(el => {
+        el.textContent = priceValue;
+    });
+    document.querySelectorAll('.mobile-price, #mobilePrice').forEach(el => {
+        el.textContent = priceValue;
+    });
+    document.querySelectorAll('.product-installment, .mobile-installment').forEach(el => {
+        el.textContent = installmentValue;
+    });
+    
     const stockEl = document.querySelector('.product-stock');
     if (product.stock < 10) {
         stockEl.textContent = `Only ${product.stock} left Mavjud`;
@@ -808,6 +827,28 @@ function initProductDetailsPage() {
         cart.addItem(product, quantity);
         window.location.href = 'cart.html';
     });
+    
+    // Mobile buy button
+    const mobileBuyBtn = document.querySelector('.mobile-buy-btn');
+    mobileBuyBtn?.addEventListener('click', () => {
+        cart.addItem(product, quantity);
+        window.location.href = 'cart.html';
+    });
+    
+    // Mobile favorite button
+    const mobileFavoriteBtn = document.querySelector('.mobile-favorite-btn');
+    mobileFavoriteBtn?.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const svg = this.querySelector('svg');
+        if (this.classList.contains('active')) {
+            svg.setAttribute('fill', 'var(--accent)');
+            svg.setAttribute('stroke', 'var(--accent)');
+        } else {
+            svg.setAttribute('fill', 'none');
+            svg.setAttribute('stroke', 'currentColor');
+        }
+    });
+    
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
     tabBtns.forEach(btn => {
